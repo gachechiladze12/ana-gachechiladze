@@ -1,0 +1,454 @@
+body {
+    font-family: 'Playfair Display', serif 'Helvetica Neue';
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+} 
+header {
+    position: relative;
+    background-color: black;
+    padding: 0;
+
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.navbar {
+    position: relative;
+    z-index: 2;
+    padding: 20px 50px;
+    background-color: transparent;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.nav-left,
+.nav-center,
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+.nav-left a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    size: 36px;
+    line-height: 100%;
+    letter-spacing: 0;
+    font-size: 30px;
+    
+}
+
+.nav-center a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.nav-right a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.nav-right a:not(.subscribe-btn) {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.subscribe-btn {
+    background-color: rgba(255, 255, 255, 0);
+    color:white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.fa-search {
+    font-size: 20px;
+}
+.hero-section {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    background-color:black;
+}
+
+.hero-image-container {
+    position: relative;
+    max-width: 1223px; 
+}
+
+.hero-image {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+.hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo-on-image {
+    align-self: flex-end;
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.text-content {
+    max-width: 50%;
+    color: #fff;
+}
+
+.text-content p {
+    margin-bottom: 10px;
+}
+
+.read-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    text-decoration: none;
+    margin-top: 20px;
+
+}
+.plans-section {
+    padding: 80px 50px;
+    background-color: #fff;
+    text-align: center;
+}
+.plans-section h2 {
+text-align: center;
+margin-bottom: 50px;
+font-size: 48px;
+font-weight: normal;
+}
+
+.plans-container {
+display: flex;
+justify-content: center;
+gap: 30px;
+flex-wrap: wrap;
+}
+
+.plan-card {
+background-color: #fff;
+border: 1px solid #ddd;
+border-radius: 8px;
+padding: 30px;
+width: 300px;
+transition: all 0.3s ease;
+cursor: pointer;
+}
+
+.plan-card h3 {
+font-size: 20px;
+margin-bottom: 15px;
+color: #333;
+}
+
+.plan-card .price {
+font-size: 28px;
+font-weight: bold;
+margin: 15px 0 5px;
+color: #333;
+}
+
+.plan-card .price span {
+font-size: 16px;
+font-weight: normal;
+color: #999;
+}
+
+.plan-card .cancel {
+color: #999;
+margin-bottom: 20px;
+font-size: 14px;
+}
+
+.plan-card ul {
+list-style: none;
+padding: 0;
+margin: 20px 0;
+}
+
+.plan-card li {
+margin-bottom: 10px;
+color: #999;
+font-weight: 300;
+}
+
+.join-btn {
+width: 100%;
+padding: 12px;
+background-color: transparent;
+color: #333;
+border: 1px solid #333;
+border-radius: 4px;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s;
+}
+.plan-card:hover {
+background-color: black;
+transform: translateY(-5px);
+box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.plan-card:hover h3,
+.plan-card:hover .price,
+.plan-card:hover .cancel,
+.plan-card:hover li {
+color: #fff;
+}
+
+.plan-card:hover .join-btn {
+background-color:#33333300 ;
+color:white;
+border-color: #fff;
+}
+.aurora-footer {
+    background-color: rgba(0, 0, 0, 0.963);
+    padding: 60px 0 30px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: white;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left {
+    width: 30%;
+    padding-right: 40px;
+}
+
+.footer-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.footer-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: white;
+}
+
+.copyright {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.461);
+}
+.footer-middle {
+    width: auto; 
+    display: flex;
+    gap: 60px; 
+}
+
+.footer-right {
+    width: auto;
+    padding-left: 0; 
+}
+
+.footer-column {
+    margin-bottom: 30px;
+    min-width: 150px; 
+}
+
+.footer-column h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-column li {
+    margin-bottom: 12px;
+}
+
+.footer-column a {
+    color: white;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    color:white;
+}
+.aurora-footer {
+    position: relative;
+    padding-bottom: 80px;
+    @media (max-width: 1024px) {
+        .navbar {
+            padding: 20px 30px;
+        }
+        
+        .nav-center a {
+            margin: 0 10px;
+            font-size: 18px;
+        }
+        
+        .nav-right a:not(.subscribe-btn) {
+            font-size: 18px;
+        }
+        
+        .subscribe-btn {
+            font-size: 18px;
+            padding: 6px 12px;
+        }
+        
+        .hero-section {
+            padding: 30px;
+        }
+        
+        .text-content {
+            max-width: 60%;
+        }
+        
+        .plans-section {
+            padding: 60px 30px;
+        }
+        
+        .footer-container {
+            flex-wrap: wrap;
+        }
+        
+        .footer-left {
+            width: 100%;
+            padding-right: 0;
+            margin-bottom: 40px;
+        }
+        
+        .footer-middle,
+        .footer-right {
+            width: 50%;
+        }
+    }
+    @media (max-width: 767px) {
+        .navbar {
+            padding: 15px 20px;
+            flex-direction: column;
+        }
+        
+        .nav-container {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
+        .nav-center {
+            margin: 15px 0;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+        
+        .nav-center a {
+            margin: 0 10px 10px 0;
+            font-size: 16px;
+        }
+        
+        .nav-right {
+            margin-top: 15px;
+        }
+        
+        .nav-left a {
+            font-size: 24px;
+        }
+        
+        .hero-section {
+            padding: 20px;
+        }
+        
+        .hero-content {
+            padding: 20px;
+        }
+        
+        .logo-on-image {
+            font-size: 36px;
+        }
+        
+        .text-content {
+            max-width: 100%;
+        }
+        
+        .plans-section h2 {
+            font-size: 36px;
+        }
+        
+        .plan-card {
+            width: 100%;
+            max-width: 350px;
+        }
+        
+        .footer-container {
+            flex-direction: column;
+        }
+        
+        .footer-middle,
+        .footer-right {
+            width: 100%;
+        }
+        
+        .footer-middle {
+            margin: 30px 0;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+    }
+   
